@@ -7,6 +7,7 @@ class NavigationBar extends StatelessWidget {
     return Container(
       height:100,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children:<Widget> [
           SizedBox(
             height: 80,
@@ -16,7 +17,7 @@ class NavigationBar extends StatelessWidget {
           Row(
             mainAxisSize : MainAxisSize.min,
             children: <Widget>[   
-            NavBarItem('Episodes'),
+            NavBarItem('Episodes'), 
             SizedBox(
               width:60,
             ),
@@ -35,8 +36,9 @@ class NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Text(
+      title,
+      style: TextStyle(fontSize: 18),
     );
   }
 }

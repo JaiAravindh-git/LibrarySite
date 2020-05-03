@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:parthalib/widgets/navigation_bar/navigation_bar.dart';
 
 class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        children:<Widget>[
+          NavigationBar()
+        ]
+      ) ,
     );
   }
 }
