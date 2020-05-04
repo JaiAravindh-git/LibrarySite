@@ -104,6 +104,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "responsive_builder",
+      "rootUri": "file:///C:/Users/Jai%20Aravindh/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/responsive_builder-0.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///D:/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -170,7 +176,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-05-03T15:09:15.023336Z",
+  "generated": "2020-05-04T04:54:54.272403Z",
   "generator": "pub",
   "generatorVersion": "2.8.1"
 }
