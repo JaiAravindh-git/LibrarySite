@@ -11,7 +11,7 @@ class NavigationBar extends StatelessWidget {
     return ScreenTypeLayout(
       mobile : NavigationBarMobile(),
       tablet: NavigationBarTabletDesktop(),
-    )
+    );
   }
 }
 

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:parthalib/widgets/navigation_bar/navigation_bar.dart';
 import 'package:parthalib/widgets/centered_view/centered_view.dart';
-import 'package:parthalib/widgets/lib_details/lib_details.dart';
-import 'package:parthalib/widgets/call_to_action/call_to_action.dart';
+import 'package:parthalib/widgets/home/home_content_desktop.dart';
+import 'package:parthalib/widgets/home/home_content_mobile.dart';
+
+
+import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -12,16 +15,10 @@ class HomeView extends StatelessWidget {
       body: CenteredView(
         child: Column(children: <Widget>[
           NavigationBar(),
-          Expanded(
-            child: Row(children: <Widget>[
-              LibDetails(),
-              Expanded(
-                child: Center(
-                  child: CallToAction("Start"),
-                ),
-              )
-            ]),
-          )
+         Expanded(child: ScreenTypeLayout(
+           mobile: HomeContentMobile(),
+           desktop: HomeContentDesktop(),
+         ),)
         ]),
       ),
     );
